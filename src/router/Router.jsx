@@ -3,6 +3,7 @@ import Signup from "../pages/signup/Signup"
 import Login from "../pages/login/Login"
 import Layout from "../pages/layout/Layout"
 import Profile from "../pages/profile/Profile"
+import PrivateRoute from "../privateRoutes/PrivateRoute"
  export let myRoutes = createBrowserRouter([
     {
         path:"/",
@@ -17,8 +18,10 @@ import Profile from "../pages/profile/Profile"
                 element:<Login/>
             },
             {
-                path:"/profile",
-                element:<Profile/>
+                path:"/profile/:id",
+                element:<PrivateRoute>
+                    <Profile/>
+                </PrivateRoute>
             }
         ]
     }

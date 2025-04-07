@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Link,  useNavigate } from 'react-router-dom'
 import style from "./Navbar.module.css"
 import toast from 'react-hot-toast'
+import { IoMdMenu } from 'react-icons/io'
 const Navbar = () => {
   let Navigate=useNavigate()
   let id=localStorage.getItem("userid")
@@ -16,7 +17,16 @@ const Navbar = () => {
         <ul>
        
           {id?(
-            <li onClick={logout}>logout</li>
+            <li className='text-xl'><IoMdMenu/>
+            <div className='bg-amber-950  absolute top-10 right-10 rounded-2xl '>
+              <li className='hover:bg-red-100 w-full ' onClick={logout}>logout</li>
+              <li className='hover:bg-red-100 w-full hover:rounded-3xl' >update</li>
+              <li className='hover:bg-red-100 w-full '>delete</li>
+            </div>
+            </li>
+            
+ 
+            
           ):(
             <Fragment>
             <li>
