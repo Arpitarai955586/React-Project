@@ -13,12 +13,6 @@
       "password": ""
     },
     {
-      "id": "0852",
-      "username": "a",
-      "email": "1233@gmail.com",
-      "password": "123"
-    },
-    {
       "id": "d5ff",
       "username": "arpita",
       "email": "1233@gmail.com",
@@ -140,6 +134,12 @@
     },
     {
       "id": "4e4c",
+      "username": "arpita",
+      "email": "1233@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "553f",
       "username": "arpita",
       "email": "1233@gmail.com",
       "password": "123"
