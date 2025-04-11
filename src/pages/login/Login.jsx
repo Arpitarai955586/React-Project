@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import { useApi } from "../../customHook/CustomHook";
-
+import { FaFacebookF } from "react-icons/fa";
+import { RiLinkedinFill } from "react-icons/ri";
+import { FaGooglePlusG } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
@@ -49,9 +51,9 @@ const Login = () => {
   return (
     <div>
       <h1 className='text-center text-3xl font-bold my-10'>login </h1>
-    <div className='flex  mx-auto w-1/2 my-15' >
+    <div className='flex  mx-auto w-1/2 shadow-xl ' >
        
-        <div className='flex flex-col justify-center items-center h-100 border-2 w-80 bg-orange-600'>
+        <div className='flex flex-col justify-center items-center h-100 w-1/2 bg-orange-600'>
        <h1 className='text-white text-3xl'>WELCOME BACK!</h1>
          <p className='text-white text-center'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -60,29 +62,29 @@ const Login = () => {
                  Login In
                </button>
 </div>
-        <div className='flex flex-col justify-center  h-100 border-2 w-80 '>
+        <div className='flex flex-col justify-center  h-100  w-1/2  inset-shadow-sm'>
        
-          <h1 className='text-black text-2xl font-bold mx-12 my-2'>Create Account</h1>
+          <h1 className='text-black text-2xl font-bold mx-25 my-5'>Create Account</h1>
           <div className='flex justify-center gap-10 w-full'  >
-          <span className=" w-8 border-2  items-center rounded-2xl">
-             
-                     </span>
-                     <span className="p-3 w-8 border-2  items-center rounded-2xl">
-                        
-                        </span>
-                        <span className="p-3 w-8 border-2 items-center rounded-2xl">
-                        
-                        </span>
+         <span className=" p-1 inset-shadow-sm  items-center rounded-2xl">
+                       <FaFacebookF size={25}  />
+                              </span>
+                              <span className="p-1  inset-shadow-sm items-center rounded-2xl">
+                              <RiLinkedinFill size={30} />
+                                 </span>
+                                 <span className="p-1  items-center rounded-2xl inset-shadow-sm">
+                                 <FaGooglePlusG  size={30}/>
+                                 </span>
           </div>
       
 
-          <p className='mx-10 my-2'>Lorem ipsum dolor sit amet.</p>
+          <p className='mx-20 my-2'>Lorem ipsum dolor sit amet.</p>
           <form action="" onSubmit={handleSubmit}>
           
-          <input className ='bg-gray-100   mx-7 px-3 py-1 my-1 rounded' type="email" placeholder='Email'name='email' value={loginuser.email} onChange={handleChange}/>
+          <input className ='bg-gray-100   mx-20 px-3 py-1 my-1 rounded ' type="email" placeholder='Email'name='email' value={loginuser.email} onChange={handleChange}/>
           <br />
-          <input className ='bg-gray-100   mx-7 px-3 py-1 my-1 rounded'type="password" placeholder='password'  name='password' value={loginuser.password} onChange={handleChange}/>
-          <button  type ="submit" className='border w-30 bg-orange-600 text-white py-2 mx-25  my-5 rounded-2xl'>
+          <input className ='bg-gray-100   mx-20 px-3 py-1 my-1 rounded'type="password" placeholder='password'  name='password' value={loginuser.password} onChange={handleChange}/>
+          <button  type ="submit" className='border w-30 bg-orange-600 text-white py-2 mx-30  my-5 rounded-2xl'>
           login
          </button>
          </form>

@@ -28,7 +28,7 @@ const Navbar = () => {
   }
   return (
     <nav id={style.navbar}>
-        <h3>Logo</h3>
+        <h3 className='ml-15 text-3xl'>Logo</h3>
         <ul>
        
           {id?(
@@ -47,10 +47,10 @@ const Navbar = () => {
             
           ):(
             <Fragment>
-            <li>
-            <Link className={style.loginbtn} to="/login">Login</Link>
+            <li className='mr-5 hover:underline text-2xl'>
+            <Link className={style.loginbtn} to="/login" >Login</Link>
            </li>
-           <li>
+           <li className='mr-10 hover:underline text-2xl'>
                <a className ={style.signupbtn} href="">Signup</a>
            </li>
          </Fragment>
