@@ -13,8 +13,8 @@ const Profile = () => {
 
   return ( 
     <div>
-       <div className="border-2 h-20 w-[500px] flex justify-center items-center text-3xl m-10 mx-120  ">
-        <h1 className='text-red-700 text-bold ' >Welcome to Profile Page</h1>
+       <div className="border-2 h-20 w-[500px] flex justify-center items-center text-3xl m-10 ml-120  ">
+        <h1 className='text-red-700 text-bold ' >Hii {user?.username},Welcome to my profile</h1>
         </div>
         <div className='flex  flex-wrap max-h-3/4 w-full border-1 justify-between space-between align-center gap-4 object-cover'>
         {productData?.map((ele)=>{
